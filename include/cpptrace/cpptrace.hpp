@@ -34,7 +34,7 @@
 #  endif
 #endif
 
-#if __cplusplus >= 202002L
+#if __cplusplus >= 202002L && !defined(_WIN32)
  #ifdef __has_include
   #if __has_include(<format>)
    #define CPPTRACE_STD_FORMAT
